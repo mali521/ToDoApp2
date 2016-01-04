@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo APP</title>
+    <link href="./bower_components/angular-material/angular-material.css" rel="stylesheet">
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-aria/angular-aria.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+    <script src="./bower_components/angular-material/angular-material.js"></script>
+    <script src="./app.js"></script>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+<body ng-app="myapp">
+<h1>Todo List</h1>
+<div ng-controller="myctrl1">
+    <md-input-container flex>
+        <input ng-model="Todo_item" placeholder="Enter What todo?">
+    </md-input-container>
+    <md-button class="md-raised md-primary" ng-click="Savetodo()" >Add Items</md-button>
+    <md-button class="md-raised md-warn" ng-click="AllDelete()">Delete All</md-button>
+</div>
+<div ng-controller="ctrl2">
+    <ul ng-repeat="t in alltodos">
+        <li>
+            {{t.name}}<img src="Delete.png" ng-click="remove($index)" height="28px" width="35px"/>
+        </li> <hr/>
+    </ul>
+</div>
+</body>
+</html>
