@@ -1,6 +1,4 @@
-/**
- * Created by Muhammad Ali Mughal on 6/13/2015.
- */
+
 var app= angular.module("myapp",["ngMaterial"])
 app.service("myservice",function(){
     var todoArray = [];
