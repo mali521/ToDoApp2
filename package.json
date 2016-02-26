@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "web": "npm start"
+    //"test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
